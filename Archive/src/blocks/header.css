@@ -1,0 +1,71 @@
+
+#wrapper {
+    overflow-x: scroll;
+    border-radius: 10px;
+    margin: 10px;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  color: rgb(247, 245, 245);
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group .list-group-item {
+  color: rgb(158, 158, 158);
+  background-color: transparent !important;
+  width: 15rem;
+  
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+#sidebar-wrapper{
+  background-image: url('../assets/hinh-nen-iphone-x-\ \(1\).png');
+  
+  background-color: rgb(50, 50, 56) !important;
+}
+#page-content-wrapper{
+  /* background-image: url(../assets/22249341.png); */
+  background-color: rgb(240, 240, 240);
+}
+.list-group-flush>.list-group-item {
+  border-width: 0 0 1px;
+  border-color:rgb(153, 149, 149) ;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6!important;
+  box-shadow:2px 2px 6px gray;
+}
